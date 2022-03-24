@@ -40,9 +40,8 @@ public  class Card {
         return suit;
     }
     public static String getArray(String s, String r, int d) {
-        schet = d;
         String[][] kolodaCard = new String[52][2];
-        for (int i = ischet; i < schet - 1; i++) {
+        /*for (int i = ischet; i < schet - 1; i++) {
             for (int j = jschet; j < 2; j++) {
                 kolodaCard[i][0] = suit;
                 kolodaCard[i][j] = rank;
@@ -50,7 +49,9 @@ public  class Card {
             };
             ischet++;
 
-        }
+        }*/
+        kolodaCard[d-1][0]=suit;
+        kolodaCard[d-1][1]=rank;
         for (int i = 0; i < 52; i++) {  //идём по строкам
             for (int j = 0; j < 2; j++) {//идём по столбцам
                 System.out.print(" " + kolodaCard[i][j] + " "); //вывод элемента
