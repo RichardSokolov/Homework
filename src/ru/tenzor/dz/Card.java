@@ -41,7 +41,7 @@ public  class Card {
         kolodaCard[d-1][1]=rank;
         for (int i = 0; i < 52; i++) {  //идём по строкам
             for (int j = 0; j < 2; j++) {//идём по столбцам
-                System.out.print(" " + kolodaCard[i][j] + " "); //вывод элемента
+                System.out.print("|" + kolodaCard[i][j] + " "); //вывод элемента
             }
             System.out.println();//перенос строки ради визуального сохранения табличной формы
         }

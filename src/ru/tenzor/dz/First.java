@@ -9,8 +9,9 @@ public class First{
         Scanner in = new Scanner(System.in);
         String[][] kolodaCard = new String[52][2];
         do {
-            System.out.println("1 - Ввести карту в колоду. 2 - Выйти ");
-            System.out.println("Введите номер меню: ");
+            System.out.println("1 - Add card.");
+            System.out.println("2 - Exit. ");
+            System.out.println("Enter menu number: ");
             key = in.nextInt();
             in.nextLine();
             switch (key) {
