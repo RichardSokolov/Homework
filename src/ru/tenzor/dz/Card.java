@@ -39,15 +39,22 @@ public  class Card {
     public static String getArray(String s, String r, int d, String[][] kolodaCard, Card FirstCard) {
         kolodaCard[d-1][0]=suit;
         kolodaCard[d-1][1]=rank;
+        System.out.print("\n");
+        System.out.print("\n");
+        System.out.printf("~~~Received deck of cards~~~");
+        System.out.print("\n");
         for (int i = 0; i < 52; i++) {  //идём по строкам
             for (int j = 0; j < 2; j++) {//идём по столбцам
                 System.out.print("|" + kolodaCard[i][j] + " "); //вывод элемента
             }
             System.out.println();//перенос строки ради визуального сохранения табличной формы
         }
+        System.out.print("\n");
+        System.out.print("\n");
         return suit;
     }
     public void displayRankandSuit() {
+        System.out.printf("Entered card: ");
         System.out.printf(suit);
         System.out.print(", ");
         System.out.printf(rank);
