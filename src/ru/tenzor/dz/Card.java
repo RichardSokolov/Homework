@@ -5,9 +5,6 @@ import java.util.Scanner;
 public  class Card {
     private static String suit;
     private static String rank;
-    public static int schet;
-    public static int ischet;
-    public static int jschet;
     public Card() { //конструктор по умолчанию
         String suit = "Diamonds";
         String rank = "Jack";
@@ -33,23 +30,13 @@ public  class Card {
             }
         }
     }
-    public String getRank() {
+    /*public String getRank() {
         return rank;
     }
     public String getSuit() {
         return suit;
-    }
-    public static String getArray(String s, String r, int d) {
-        String[][] kolodaCard = new String[52][2];
-        /*for (int i = ischet; i < schet - 1; i++) {
-            for (int j = jschet; j < 2; j++) {
-                kolodaCard[i][0] = suit;
-                kolodaCard[i][j] = rank;
-                jschet++;
-            };
-            ischet++;
-
-        }*/
+    }*/
+    public static String getArray(String s, String r, int d, String[][] kolodaCard, Card FirstCard) {
         kolodaCard[d-1][0]=suit;
         kolodaCard[d-1][1]=rank;
         for (int i = 0; i < 52; i++) {  //идём по строкам
